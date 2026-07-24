@@ -1,0 +1,332 @@
+{
+  "data_sources": {
+    "tables": [
+      {
+        "column_configs": [
+          {
+            "column_name": "amount",
+            "synonyms": [
+              "dollar amount",
+              "payment amount",
+              "transaction amount",
+              "value"
+            ]
+          },
+          {
+            "column_name": "claim_id",
+            "synonyms": [
+              "Rx ID",
+              "claim number",
+              "prescription ID"
+            ]
+          },
+          {
+            "column_name": "transaction_date",
+            "synonyms": [
+              "posting date",
+              "payment date",
+              "transaction timestamp"
+            ]
+          },
+          {
+            "column_name": "transaction_id",
+            "synonyms": [
+              "transaction number",
+              "payment ID"
+            ]
+          },
+          {
+            "column_name": "transaction_type",
+            "synonyms": [
+              "payment type",
+              "transaction category",
+              "event type"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.claim_transactions"
+      },
+      {
+        "column_configs": [
+          {
+            "column_name": "claim_id",
+            "synonyms": [
+              "claim number",
+              "Rx ID",
+              "script ID",
+              "prescription ID"
+            ]
+          },
+          {
+            "column_name": "claim_status",
+            "synonyms": [
+              "status",
+              "adjudication status",
+              "claim state"
+            ]
+          },
+          {
+            "column_name": "days_supply",
+            "synonyms": [
+              "days supplied",
+              "supply days",
+              "treatment days"
+            ]
+          },
+          {
+            "column_name": "fill_date",
+            "synonyms": [
+              "dispense date",
+              "service date",
+              "Rx date",
+              "prescription date"
+            ]
+          },
+          {
+            "column_name": "ndc_code",
+            "synonyms": [
+              "NDC",
+              "product code",
+              "drug code"
+            ]
+          },
+          {
+            "column_name": "patient_id",
+            "synonyms": [
+              "member ID",
+              "patient number"
+            ]
+          },
+          {
+            "column_name": "payer_id",
+            "synonyms": [
+              "plan ID",
+              "insurer ID"
+            ]
+          },
+          {
+            "column_name": "pharmacy_id",
+            "synonyms": [
+              "dispensing pharmacy",
+              "store ID"
+            ]
+          },
+          {
+            "column_name": "prescriber_npi",
+            "synonyms": [
+              "HCP NPI",
+              "doctor NPI",
+              "prescriber ID",
+              "provider ID"
+            ]
+          },
+          {
+            "column_name": "quantity",
+            "synonyms": [
+              "units",
+              "quantity dispensed",
+              "Rx quantity"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.claims"
+      },
+      {
+        "column_configs": [
+          {
+            "column_name": "payer_id",
+            "synonyms": [
+              "plan ID",
+              "insurer ID",
+              "health plan ID"
+            ]
+          },
+          {
+            "column_name": "payer_name",
+            "synonyms": [
+              "plan name",
+              "insurer name",
+              "health plan"
+            ]
+          },
+          {
+            "column_name": "payer_type",
+            "synonyms": [
+              "insurance type",
+              "plan type",
+              "coverage type"
+            ]
+          },
+          {
+            "column_name": "region",
+            "synonyms": [
+              "state",
+              "location",
+              "geography"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.payers"
+      },
+      {
+        "column_configs": [
+          {
+            "column_name": "chain",
+            "synonyms": [
+              "banner",
+              "network",
+              "retail chain"
+            ]
+          },
+          {
+            "column_name": "pharmacy_id",
+            "synonyms": [
+              "store ID",
+              "pharmacy code",
+              "location ID"
+            ]
+          },
+          {
+            "column_name": "pharmacy_name",
+            "synonyms": [
+              "store name",
+              "pharmacy"
+            ]
+          },
+          {
+            "column_name": "state",
+            "synonyms": [
+              "state code",
+              "location"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.pharmacies"
+      },
+      {
+        "column_configs": [
+          {
+            "column_name": "npi",
+            "synonyms": [
+              "NPI number",
+              "provider ID",
+              "prescriber ID",
+              "HCP ID",
+              "doctor ID"
+            ]
+          },
+          {
+            "column_name": "prescriber_name",
+            "synonyms": [
+              "HCP name",
+              "provider name",
+              "doctor name",
+              "physician name"
+            ]
+          },
+          {
+            "column_name": "specialty",
+            "synonyms": [
+              "practice area",
+              "medical field",
+              "provider specialty"
+            ]
+          },
+          {
+            "column_name": "state",
+            "synonyms": [
+              "state code",
+              "practice state",
+              "location"
+            ]
+          },
+          {
+            "column_name": "tier",
+            "synonyms": [
+              "segment",
+              "priority tier",
+              "targeting tier"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.prescribers"
+      },
+      {
+        "column_configs": [
+          {
+            "column_name": "brand_generic",
+            "synonyms": [
+              "drug type",
+              "product type"
+            ]
+          },
+          {
+            "column_name": "launch_date",
+            "synonyms": [
+              "market entry date",
+              "approval date"
+            ]
+          },
+          {
+            "column_name": "ndc_code",
+            "synonyms": [
+              "NDC",
+              "product code",
+              "drug code"
+            ]
+          },
+          {
+            "column_name": "product_name",
+            "synonyms": [
+              "brand name",
+              "drug name",
+              "product"
+            ]
+          },
+          {
+            "column_name": "therapeutic_class",
+            "synonyms": [
+              "therapy area",
+              "indication",
+              "disease area",
+              "TA"
+            ]
+          }
+        ],
+        "identifier": "workspace.default.products"
+      }
+    ]
+  },
+  "instructions": {
+    "sql_snippets": {
+      "filters": [
+        {
+          "display_name": "Paid claims only",
+          "id": "01f185c2927a13e88b73e3010cabd8b4",
+          "sql": [
+            "claims.claim_status = 'paid'"
+          ]
+        }
+      ]
+    },
+    "text_instructions": [
+      {
+        "content": [
+          "### HCP Reach Definition\n",
+          "HCP reach = COUNT(DISTINCT npi) across both hcp_interactions and digital_engagements tables. To calculate, combine both tables using UNION before counting distinct NPIs.\n",
+          "\n",
+          "### Paid Claims Definition\n",
+          "Paid claims are claims with claim_status = 'paid'. These represent prescriptions that were approved and paid by the payer. Exclude claims with status 'rejected' (denied), 'reversed' (clawed back), or 'pending' (under review). Only paid claims count as true prescription demand.\n",
+          "\n",
+          "### Net Revenue Definition\n",
+          "Net revenue is the actual revenue retained by the company after all price adjustments. Calculate as: SUM(amount) WHERE transaction_type = 'gross_payment' minus SUM(amount) WHERE transaction_type IN ('rebate', 'chargeback', 'return'). This represents gross revenue minus all reductions.\n",
+          "\n",
+          "### Copay Exclusion from Net Revenue\n",
+          "Copay transactions must be excluded from net revenue calculations. Copay is the patient's out-of-pocket payment, not company revenue. When calculating net revenue, only use transaction types: gross_payment (add), rebate (subtract), chargeback (subtract), and return (subtract). Never include copay in revenue metrics."
+        ],
+        "id": "01f185bd98f91b05ba2b5da9123bc963"
+      }
+    ]
+  },
+  "version": 2
+}

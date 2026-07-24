@@ -1,0 +1,12 @@
+bundle:
+  name: my-genie-bundle
+  uuid: my-genie-bundle-uuid
+  engine: direct
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
